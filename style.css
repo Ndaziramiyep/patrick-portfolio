@@ -88,6 +88,7 @@ span{
 
 section{
     padding: 100px 10%;
+    /* padding: 80px 10%; */
 }
 
 .home{
@@ -98,6 +99,7 @@ section{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4em;
+    /* border: 2px solid white; */
 }
 .home-content{
     max-width: 600px;
@@ -279,6 +281,11 @@ a.btn:nth-child(2)::before{
     width: 100%;
     max-width: 350px;
     height:auto;
+    animation: morph 6s linear infinite;
+    background: #12f7ff;
+    border: 2px solid white;
+    box-shadow:0 0 0.3rem #12f7ff;
+
 }
 
  .liquid-shape{
@@ -288,3 +295,331 @@ a.btn:nth-child(2)::before{
     z-index: -1;
     top: 60%;
 } 
+
+/* ------ About--------------------------------------------*/
+
+
+.about{
+    /* min-height: 100vh;
+    height: 100%;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    background: var(--secon-bg-color);
+}
+
+.about .img-about{
+    text-align: center;
+    position: relative;
+    border: 2px solid white;
+    border: 2px solid rgb(63, 153, 255);
+    border-radius: 5px 5px 5px 5px;
+    animation: morph 6s linear infinite;
+    box-shadow:0 0 0.3rem #12f7ff;
+}
+.about .img-about img{
+    max-width: 400px;
+    height: auto;
+    border: 2px solid rgb(63, 153, 255);
+    border-radius: 5px 5px 5px 5px;
+    animation: morph 6s linear infinite;
+    /* border-radius: 54px 5px 30px 50px / 240px 5px 72% 30px; */
+}
+
+.about-content span{
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-content h2{
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--norma-font);
+}
+
+.about-content h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.about-content p{
+    color: #fdfdfd;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.info-about1,
+.info-about2,
+.info-about3{
+    background: var(--bg-color);
+    font-size: .5rem;
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: var(--neon-box-shadow);
+    border: var(--hover-color);
+    outline: 2px solid var(--bg-color);
+    z-index: 100;
+    animation: morph 6s linear infinite;
+}
+
+.info-about1{
+    left: -10%;
+    top: 50%;
+}
+
+.info-about2{
+    left: 66%;
+    top: -20%;
+}
+
+.info-about3{
+    left: 61%;
+    top: 70%;
+}
+
+.img-about span{
+    color: var(--hover-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ---------------service section css -------------------- */
+
+.main-text{
+    width:100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
+
+main-text h2{
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+.main-text span{
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}
+
+.section-services .service-box{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px; 
+}
+ 
+.service-btn{
+    width: auto;
+    justify-content: center;
+}
+
+.service-box:hover{
+    transform: translateY(-.7rem);
+}
+.service-icon{
+    border: 2px solid var(--hover-color);
+    padding: 2rem;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: relative;
+    color: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+    outline: 3px solid var(--bg-color);
+}
+
+.service-box h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.service-box p{
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+/* -------------- service section ---------------- */
+
+.skills{
+    background: var(--secon-bg-color);
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar{
+    margin-top: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html{
+    width: 72%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .figma{
+    width: 90%;
+    animation: figma 3s;
+
+}
+
+.skill-bar .bar .javascript{
+    width: 80%;
+    animation: javascript 4s;
+
+}
+
+.skill-bar .bar .css{
+    width: 62%;
+    animation: css 5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- keyframes ----------------------------------- */
+
+@keyframes morph{
+    0%,100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 30% / 40% 40% 60% 50%;
+    }
+    60%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80%{
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes figma {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 62%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
