@@ -170,7 +170,7 @@ section{
     height: 45px;
 }
 
-.btn-box a.btn{
+.btn-box .btn{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -190,11 +190,11 @@ section{
     border: 2px solid var(--hover-color);
 }
 
-a.btn:hover{
+.btn:hover{
    color: var(--hover-color); 
 }
 
-a.btn::before{
+.btn::before{
     content: "";
     position: absolute;
     top:0;
@@ -206,20 +206,20 @@ a.btn::before{
     transition: .4s;
 }
 
-a.btn:hover::before{
+.btn:hover::before{
     width:100%;
 }
 
-a.btn:nth-child(2){
+.btn:nth-child(2){
     background: var(--bg-color);
     color: var(--hover-color);
 }
 
-a.btn:nth-child(2):hover{
+.btn:nth-child(2):hover{
     color: var(--bg-color);
 }
 
-a.btn:nth-child(2)::before{
+.btn:nth-child(2)::before{
     background: var(--hover-color);
 }
 
@@ -278,8 +278,8 @@ a.btn:nth-child(2)::before{
     text-align: center;
 }
 .img-box img{
-    width: 100%;
-    max-width: 350px;
+    width: 60%;
+    max-width: 280px;
     height:auto;
     animation: morph 6s linear infinite;
     background: #12f7ff;
@@ -576,7 +576,7 @@ main-text h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
   }
 
   .circle .points{
@@ -590,10 +590,166 @@ main-text h2{
     animation-delay:calc(var(--i)*0.05s)
   }
 
+  .points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay:calc(var(--i)*0.05s)
+  }
 
+/*  Portfolio section css ------------------------*/
 
+.fillter-buttons{
+    margin: 2rem;
+    text-align: center;
+}
 
+.fillter-buttons .btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    color: var(--text-color);
+}
 
+.fillter-buttons .btn:hover{
+    color: var(--hover-color);
+}
+
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(270px , 1fr));
+    gap: 2rem;
+}
+
+.port-box{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+}
+
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.port-image img{
+    width: 100%;
+    opacity: 0.5s;
+    height: 100%;
+    transition: .5s;
+}
+
+.port-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0 ;
+    background: linear-gradient(rgba(0,0,0,.2),#12f7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+}
+
+.port-box:hover .port-content{
+    opacity: 1;
+}
+
+.port-box:hover .port-image img{
+    transform: scale(1.1);
+}
+
+.port-content h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.port-content p{
+    font-size: .8rem;
+    margin: 5px 0 15px 0;
+}
+
+.port-content a{
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--hover-color);
+    outline: 2px solid #fff;
+}
+
+.port-content a i{
+    font-size: 1.3rem;
+    color: var(--secon-bg-color);
+}
+
+/* contact section css ------------------------- */
+
+.contant{
+    background: var(--secon-bg-color);
+    width: 100%;
+}
+
+.contant form{
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+.contant form input,
+.contant form textarea{
+    width: 100%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin-bottom: .8rem;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+}
+
+.contant form textarea{
+    resize: none;
+}
+
+.formBtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formBtn .btn{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+  /* footer css --------------------------- */
+  footer{
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 
 
