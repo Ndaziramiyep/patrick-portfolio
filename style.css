@@ -537,8 +537,58 @@ main-text h2{
 .skill-bar .bar .css{
     width: 62%;
     animation: css 5s;
-
 }
+
+  /* skill right ------ */
+  .porfessional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+  }
+
+  .box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box .text small{
+    display: block;
+    font-weight: 600;
+  }
+
+  .circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+  }
+
+  .circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+    animation: glow 0.04s linear forwards;
+    animation-delay:calc(var(--i)*0.05s)
+  }
 
 
 
@@ -614,7 +664,17 @@ main-text h2{
     }
 }
 
-
+@keyframes glow{
+    0%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    100%{
+         background: var(--bg-color);
+         box-shadow:var(--neon-box-shadow)
+    }
+    
+}
 
 
 
