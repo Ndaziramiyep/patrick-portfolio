@@ -10,10 +10,14 @@
 }
 
 :root{
-    --text-color: #f5f5f5;
-    --hover-color:#12f7ff;
-    --bg-color:#250821;
-    --secon-bg-color:#291e33;
+    --text-color: white;
+    /* --text-color: #f5f5f5; */
+    --hover-color:rgb(96, 198, 246);
+    /* --hover-color:#12f7ff; */
+    --bg-color:rgb(12, 59, 67);
+    /* --bg-color:#250821; */
+    --secon-bg-color:rgb(18, 72, 82);
+    /* --secon-bg-color:#291e33; */
     --big-font:2.5rem;
     --norma-font:2rem;
     --neon-box-shadow:0 0 .5rem #12f7ff;
