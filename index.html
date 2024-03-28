@@ -29,11 +29,11 @@
         <div class="change-text">
             <h3>And I'm</h3>
             <h3>
-                <span class="word">Youtuber</span>
-                <span class="word">Web&nbsp;Designer</span>
                 <span class="word">Frontend&nbsp;Developer</span>
+                <span class="word">Web&nbsp;Designer</span>
+                <span class="word">Backend&nbsp;Developer</span>
                 <span class="word">UX/UI&nbsp;developer</span>
-                <span class="word">Graphic&nbsp;Designer</span>
+                <!-- <span class="word">Computer&nbsp;Technician</span> -->
             </h3>
         </div>
 
@@ -52,14 +52,14 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn">Hire Me Now!</a>
+                <a href="./Patrick-CV.pdf" class="btn" target="_blank">Download CV</a>
+                <a href="#" class="btn" target="blank">Hire Me Now!</a>
             </div>
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-dribbble' ></i></a>
+                <a href="#" target="blank"><i class='bx bxl-facebook'></i></a>
+                <a href="#" target="blank"><i class='bx bxl-instagram'></i></a>
+                <a href="#" target="blank"><i class='bx bxl-twitter'></i></a>
+                <a href="#" target="blank"><i class='bx bxl-dribbble' ></i></a>
             </div>
 
       </div>  
@@ -77,15 +77,15 @@
         <div class="img-about scroll-scale">
             <img src="img/Patrick.jpg" alt="" width="200" height="350">
             <div class="info-about1">
-                <span>10+</span>
+                <span>8+</span>
                 <p>Years of Experience</p>
             </div>
             <div class="info-about2">
-                <span>150+</span>
-                <p>Project Complete</p>
+                <span>50+</span>
+                <p>Projects Complete</p>
             </div>
             <div class="info-about3">
-                <span>200+</span>
+                <span>100+</span>
                 <p>Happy Cionts</p>
             </div>
         </div>
@@ -356,12 +356,12 @@
         <span>Ask me question</span>
         <h2>Contact Me</h2>
     </div>
-    <form action="" class="scroll-bottom">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Your Address">
-        <input type="text" placeholder="Phone Number" required>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <form onsubmit="sendEmail(); reset(); return false" class="scroll-bottom">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="address" placeholder="Your Address">
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
         <div class="btn-box formBtn" required>
             <button type="submit" class="btn">Send Message</button>
         </div>
@@ -375,6 +375,7 @@
     </footer>
  </section>
     <script src="mixitup.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -121,3 +121,20 @@ scrollBottom.forEach((el)=>observer.observe(el));
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observr(el));
 
+// Email Sending ///////////////////////////////////////
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : " ",
+        Password : " ",
+        To :  "patrickofficial30@gmail.com",
+        From : document.getElementById("email").value,
+        Subject : "New Contact From Enquiry",
+        Body : "Name: "+document.getElementById("name").value
+              + "<br> Email:"+document.getElementById("email").value
+              + "<br> Phone No:"+document.getElementById("phone").value
+              + "<br> Message: "+document.getElementById("message").value
+              + "<br>"+document.getElementById("address").value
+          }).then(message => alert("Message Sent Successfully!, Thank You!"));
+}

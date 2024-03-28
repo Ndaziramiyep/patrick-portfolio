@@ -827,7 +827,9 @@ footer a p{
     transform: translateX(0);
 }
 
-
+::placeholder{
+    color: #bdbdbd;
+}
 
 
 
