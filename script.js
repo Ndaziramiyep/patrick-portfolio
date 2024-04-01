@@ -140,17 +140,37 @@ scrollTop.forEach((el)=>observer.observr(el));
 // }
 
 function sendEmail(){
-Email.send({
-    SecureToken : "67685274-62c8-4eea-aa7e-57d8feb07895",
-    To : 'patrickofficial30@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact From Enquiry",
-    Body : "Name: "+document.getElementById("name").value
-                  + "<br> Email:"+document.getElementById("email").value
-                  + "<br> Phone No:"+document.getElementById("phone").value
-                  + "<br> Message: "+document.getElementById("message").value
-                  + "<br>"+document.getElementById("address").value
-}).then(
-  message => alert(message)
-);
+    Email.send({
+        SecureToken : "b66afabd-8ad3-4bd0-89cf-5450e6a112d5",
+        To : 'patrickofficial30@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact From Enquiry",
+        Body : "Name: "+document.getElementById("name").value
+        + "<br> Email: "+document.getElementById("email").value
+        + "<br> Phone No: "+document.getElementById("phone").value
+        + "<br> Message: "+document.getElementById("message").value
+        + "<br>"+document.getElementById("address").value
+    }).then(
+      message => alert(message)
+    );
 }
+
+
+
+
+
+
+// Email.send({
+//     SecureToken : "c1e25f64-28b3-4cb1-b98a-d9fbf2d09831",
+//     To : 'patrickofficial30@gmail.com',
+//     From : document.getElementById("email").value,
+//     Subject : "New Contact From Enquiry",
+    // Body : "Name: "+document.getElementById("name").value
+    //               + "<br> Email:"+document.getElementById("email").value
+    //               + "<br> Phone No:"+document.getElementById("phone").value
+    //               + "<br> Message: "+document.getElementById("message").value
+    //               + "<br>"+document.getElementById("address").value
+// }).then(
+//   message => alert(message)
+// );
+
