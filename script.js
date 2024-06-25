@@ -127,7 +127,7 @@ scrollTop.forEach((el)=>observer.observr(el));
 function sendEmail(){
     Email.send({
         SecureToken : "b66afabd-8ad3-4bd0-89cf-5450e6a112d5",
-        To : 'patrickofficial30@gmail.com',
+        To : 'patrickndaziramiye03@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact From Enquiry",
         Body : "Name: "+document.getElementById("name").value
