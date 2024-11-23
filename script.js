@@ -123,7 +123,7 @@ scrollTop.forEach((el)=>observer.observr(el));
 
 // Email Sending ///////////////////////////////////////
 
-
+/*
 function sendEmail(){
     Email.send({
         SecureToken : "b66afabd-8ad3-4bd0-89cf-5450e6a112d5",
@@ -139,4 +139,31 @@ function sendEmail(){
       message => alert(message)
     );
 }
+*/
+
+function sendMail(){
+    var params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('address').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value,
+    };
+const serviceID = "service_ddu8abx";
+const templateID = "template_n835vlg";
+emailjs.send(serviceID,templateID,params)
+.then(
+    res =>{
+        document.getElementById('name').value ="";
+        document.getElementById('email').value =" ";
+        document.getElementById('address').value =" ";
+        document.getElementById('phone').value =" ";
+        document.getElementById('message').value =" ";
+        console.log(res);
+        alert("Your message sent successfully!");
+    })
+    .catch((err) => console.log(err));
+}
+
+
 
