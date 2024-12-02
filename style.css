@@ -553,24 +553,24 @@ main-text h2{
 }
 
 .skill-bar .bar .html{
-    width: 72%;
+    width: 90%;
     animation: html 2s;
 }
 
 .skill-bar .bar .figma{
-    width: 90%;
+    width: 95%;
     animation: figma 3s;
 
 }
 
 .skill-bar .bar .javascript{
-    width: 80%;
+    width: 90%;
     animation: javascript 4s;
 
 }
 
 .skill-bar .bar .css{
-    width: 62%;
+    width: 75%;
     animation: css 5s;
 }
 
