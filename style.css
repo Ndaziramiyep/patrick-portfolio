@@ -573,6 +573,10 @@ main-text h2{
     width: 75%;
     animation: css 5s;
 }
+.skill-bar .bar .python{
+    width: 80%;
+    animation: css 5s;
+}
 
   /* skill right ------ */
   .porfessional{
