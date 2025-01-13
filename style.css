@@ -899,6 +899,14 @@ footer a p{
         width: 62%;
     }
 }
+@keyframes python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 67%;
+    }
+}
 
 @keyframes glow{
     0%{
