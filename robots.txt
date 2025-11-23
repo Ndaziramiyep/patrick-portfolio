@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://npatrickportfolio.netlify.app/sitemap.xml
+
+# Block sensitive or unnecessary files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /temp/
+Disallow: /drafts/
+
+# Extra SEO guidance for crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Crawl-delay: 2
