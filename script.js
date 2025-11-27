@@ -112,34 +112,47 @@ const observer = new IntersectionObserver((entries)=>{
     });
 });
 
-const scrollScale = document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((el)=>observer.observe(el));
+// const scrollScale = document.querySelectorAll(".scroll-scale");
+// scrollScale.forEach((el)=>observer.observe(el));
 
-const scrollBottom = document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((el)=>observer.observe(el));
+// const scrollBottom = document.querySelectorAll(".scroll-bottom");
+// scrollBottom.forEach((el)=>observer.observe(el));
 
-const scrollTop = document.querySelectorAll(".scroll-top");
-scrollTop.forEach((el)=>observer.observr(el));
+// const scrollTop = document.querySelectorAll(".scroll-top");
+// scrollTop.forEach((el)=>observer.observr(el));
+
+document.addEventListener('DOMContentLoaded', function() {
+            const scrollElements = document.querySelectorAll('.scroll-scale, .scroll-bottom');
+            
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+            
+            const displayScrollElement = (element) => {
+                element.classList.add('show-items');
+            };
+            
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.25)) {
+                        displayScrollElement(el);
+                    }
+                });
+            };
+            
+            // Initial check
+            handleScrollAnimation();
+            
+            // Listen for scroll events
+            window.addEventListener('scroll', () => {
+                handleScrollAnimation();
+            });
+        });
 
 // Email Sending ///////////////////////////////////////
-
-/*
-function sendEmail(){
-    Email.send({
-        SecureToken : "b66afabd-8ad3-4bd0-89cf-5450e6a112d5",
-        To : 'patrickndaziramiye03@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Contact From Enquiry",
-        Body : "Name: "+document.getElementById("name").value
-        + "<br> Email: "+document.getElementById("email").value
-        + "<br> Phone No: "+document.getElementById("phone").value
-        + "<br> Message: "+document.getElementById("message").value
-        + "<br>"+document.getElementById("address").value
-    }).then(
-      message => alert(message)
-    );
-}
-*/
 
 function sendMail(){
     var params = {
