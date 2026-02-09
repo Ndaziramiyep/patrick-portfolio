@@ -122,8 +122,7 @@ span{
 /* ---------------------------- header-End --------------------------- */
 
 section{
-    padding: 100px 10%;
-    /* padding: 80px 10%; */
+    padding: 60px 10%;
 }
 
 .home{
@@ -133,8 +132,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    grid-gap: 4em;
-    /* border: 2px solid white; */
+    grid-gap: 2em;
 }
 .home-content{
     max-width: 600px;
@@ -186,7 +184,7 @@ section{
     justify-content: space-between;
     align-items: center;
     width: 300px;
-     margin: 1rem 0 2rem;
+     margin: 0.5rem 0 1rem;
 }
 
 .info-box h5{
@@ -259,7 +257,7 @@ section{
 }
 
 .social-icons{
-    margin-top: 8rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     width: 220px;
@@ -335,13 +333,10 @@ section{
 
 
 .about{
-    /* min-height: 100vh;
-    height: 100%;
-    width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     background: var(--secon-bg-color);
 }
 
@@ -433,7 +428,7 @@ section{
 .main-text{
     width:100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--hover-color);
 }
 
@@ -454,12 +449,12 @@ main-text h2{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
 }
 
 .section-services .service-box{
     flex: 1 1 18rem;
-    padding: 2rem 1rem 2rem;
+    padding: 1.5rem 1rem 1.5rem;
     text-align: center;
     background: var(--secon-bg-color);
     transition: transform .4s;
@@ -511,16 +506,16 @@ main-text h2{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
 }
 
 .skill-bar{
-    margin-top: 2.3rem;
+    margin-top: 1.5rem;
 }
 
 .skill-main h3{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: var(--normal-font);
     text-align: center;
 }
@@ -637,7 +632,7 @@ main-text h2{
 /*  Portfolio section css ------------------------*/
 
 .fillter-buttons{
-    margin: 2rem;
+    margin: 1.5rem;
     text-align: center;
 }
 
@@ -660,7 +655,7 @@ main-text h2{
 .portfolio-gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(270px , 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .port-box{
@@ -771,8 +766,8 @@ main-text h2{
         .blog-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 3rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
         
         .blog-post {
@@ -895,7 +890,7 @@ main-text h2{
         
         .blog-view-all {
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
         
         .blog-cta {
@@ -980,7 +975,7 @@ main-text h2{
     text-align: center;
     max-width: 50rem;
     margin: 1rem auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .contant form input,
