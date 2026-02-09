@@ -10,26 +10,18 @@
 }
 
 :root{
-    --text-color: white;
-    /* --text-color: #f5f5f5; */
-    --hover-color:rgb(96, 198, 246);
-    /* --hover-color:#12f7ff; */
-    --bg-color:rgb(12, 59, 67);
-    /* --bg-color:#250821; */
-    --secon-bg-color:rgb(18, 72, 82);
-    /* --secon-bg-color:#291e33; */
+    --text-color: #ffffff;
+    --hover-color: #3b82f6;
+    --bg-color: #0f172a;
+    --secon-bg-color: #1e293b;
     --big-font:2.5rem;
     --norma-font:2rem;
-    --neon-box-shadow:0 0 .5rem #12f7ff;
+    --neon-box-shadow:0 0 .5rem rgba(59, 130, 246, 0.5);
     --h2-font:3rem;
-    --font-neon-text-shadow:0 0 10px rgba(18,247,255,0.3),
-    0 0 20px rgba(18,247,255,0.3),
-    0 0 30px rgba(18,247,255,0.3),
-    0 0 40px rgba(18,247,255,0.3),
-    0 0 70px rgba(18,247,255,0.3),
-    0 0 80px rgba(18,247,255,0.3),
-    0 0 100px rgba(18,247,255,0.3),
-    0 0 150px rgba(18,247,255,0.3);
+    --font-neon-text-shadow:0 0 10px rgba(59, 130, 246, 0.3),
+    0 0 20px rgba(59, 130, 246, 0.3),
+    0 0 30px rgba(59, 130, 246, 0.3),
+    0 0 40px rgba(59, 130, 246, 0.3);
 }
 
 ::-webkit-scrollbar{
@@ -94,14 +86,7 @@ span{
 
 .navlist a:hover{
     color:var(--hover-color);
-   text-shadow: 0 0 10px rgba(18,247,255,0.6),
-   0 0 20px rgba(18,247,255,0.6),
-   0 0 30px rgba(18,247,255,0.6),
-   0 0 40px rgba(18,247,255,0.6),
-   0 0 70px rgba(18,247,255,0.6),
-   0 0 80px rgba(18,247,255,0.6),
-   0 0 100px rgba(18,247,255,0.6),
-   0 0 150px rgba(18,247,255,0.6);
+   text-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
 }
 
 .navlist a.active{
@@ -274,7 +259,7 @@ section{
     color: var(--hover-color);
     border: 2px solid var(--hover-color);
     transition: .6s;
-    box-shadow:0 0 0.3rem #12f7ff;
+    box-shadow:0 0 0.3rem rgba(59, 130, 246, 0.5);
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -315,9 +300,9 @@ section{
     max-width: 280px;
     height:auto;
     animation: morph 6s linear infinite;
-    background: #12f7ff;
+    background: var(--hover-color);
     border: 2px solid white;
-    box-shadow:0 0 0.3rem #12f7ff;
+    box-shadow:0 0 0.3rem rgba(59, 130, 246, 0.5);
 
 }
 
@@ -344,18 +329,17 @@ section{
     text-align: center;
     position: relative;
     border: 2px solid white;
-    border: 2px solid rgb(63, 153, 255);
+    border: 2px solid var(--hover-color);
     border-radius: 5px 5px 5px 5px;
     animation: morph 6s linear infinite;
-    box-shadow:0 0 0.3rem #12f7ff;
+    box-shadow:0 0 0.3rem rgba(59, 130, 246, 0.5);
 }
 .about .img-about img{
     max-width: 400px;
     height: auto;
-    border: 2px solid rgb(63, 153, 255);
+    border: 2px solid var(--hover-color);
     border-radius: 5px 5px 5px 5px;
     animation: morph 6s linear infinite;
-    /* border-radius: 54px 5px 30px 50px / 240px 5px 72% 30px; */
 }
 
 .about-content span{
@@ -829,9 +813,9 @@ main-text h2{
         }
         
         .blog-category.development {
-            background: rgba(18, 247, 255, 0.2);
-            color: #12f7ff;
-            border: 1px solid #12f7ff;
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--hover-color);
+            border: 1px solid var(--hover-color);
         }
         
         .blog-category.tutorial {
@@ -875,8 +859,8 @@ main-text h2{
         }
         
         .blog-link:hover {
-            color: #12f7ff;
-            text-shadow: 0 0 10px rgba(18, 247, 255, 0.6);
+            color: var(--hover-color);
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
         }
         
         .blog-link::after {
