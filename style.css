@@ -1019,6 +1019,8 @@ main-text h2{
 
   .footer p{
     color: #bdbdbd;
+    text-align: center;
+    flex: 1;
   }
 
   footer a{
