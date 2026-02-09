@@ -180,3 +180,20 @@ emailjs.send(serviceID,templateID,params)
 
 
 
+
+// Toggle Blog Posts ///////////////////////////////////////
+
+function toggleBlogs() {
+    const hiddenBlogs = document.querySelectorAll('.hidden-blog');
+    const btn = document.getElementById('viewAllBtn');
+    
+    hiddenBlogs.forEach(blog => {
+        if (blog.style.display === 'block') {
+            blog.style.display = 'none';
+            btn.textContent = 'View All Blogs';
+        } else {
+            blog.style.display = 'block';
+            btn.textContent = 'Show Less';
+        }
+    });
+}

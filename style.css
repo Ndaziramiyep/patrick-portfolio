@@ -889,6 +889,15 @@ main-text h2{
             transform: translateX(5px);
         }
         
+        .hidden-blog {
+            display: none;
+        }
+        
+        .blog-view-all {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
         .blog-cta {
             text-align: center;
             padding: 3rem 2rem;
