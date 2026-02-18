@@ -202,13 +202,16 @@ function toggleBlogs() {
 
 function toggleReadMore() {
     const moreText = document.getElementById('moreText');
+    const dots = document.getElementById('dots');
     const btn = document.getElementById('readMoreBtn');
     
     if (moreText.style.display === 'none') {
         moreText.style.display = 'inline';
+        dots.style.display = 'none';
         btn.textContent = 'Read Less';
     } else {
         moreText.style.display = 'none';
+        dots.style.display = 'inline';
         btn.textContent = 'Read More!';
     }
 }
